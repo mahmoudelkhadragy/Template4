@@ -1,0 +1,420 @@
+/* ---------------- General style --------------- */
+body{
+    height: 4000px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .3s ease-in-out;
+}
+.over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+.section-title{
+    color: #444;
+    font-size: 35px;
+}
+.sections{
+    padding: 50px 0;
+    overflow: hidden;
+}
+.sec-line{
+    width: 200px;
+    margin: 15px auto;
+    height: 1px;
+    background-color: #5799af;
+    position: relative;
+}
+.sec-line:after{
+    content: "";
+    background-color: #09c;
+    height: 6px;
+    width: 60px;
+    position: absolute;
+    left: 70px;
+    top: -3px;
+}
+.section-paragraph{
+    width: 60%;
+    color: #666;
+    margin: 30px auto 50px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+/* ---------------- Header style --------------- */
+header{
+    background-image: url(../images/skill-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 640px;
+    position: relative;
+}
+
+.navbar{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    min-height: 20px;
+    padding: 5px 0;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+.navbar-default .navbar-brand{color: #fff;transition: all .3s ease-in-out;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{color: #09c}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 10px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+
+}
+.navbar-default .navbar-nav>li>a{color: #fff;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #09c;
+}
+.navbar-collapse{
+    padding: 0;
+}
+.navbar-fixed-top .navbar-collapse{max-height: none;}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+    color: #09c;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: #fff;
+}
+@media (max-width: 767px){
+    .navbar-collapse{
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    }
+    .navbar-nav{
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+        z-index: 4444;
+        overflow: hidden;
+
+    }
+    .navbar-nav li{
+        margin-left: 10px;
+    }
+    .navbar-nav li a{
+        padding: 10px;
+    }
+    .navbar-nav li:hover a{margin-left: 10px}
+    .navbar-collapse.in{overflow: hidden;}
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: #09c;
+    }
+}
+
+header .head{
+    padding: 50px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+header .head h1{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 4px;
+    font-size: 65px;
+    margin: 10px 0 20px;
+}
+header .head p{
+    margin: 30px 0;
+}
+.head-btn{
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #09c;
+    font-size: 20px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+header .head .head-btn:hover{
+    color: #09c;
+    background-color: #fff;
+}
+
+@media(max-width: 600px){
+    header .head h1{
+        font-size: 50px;
+    }
+    header .head .head-btn{
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 750px) and (max-width: 840px){
+    header .head{
+        margin-top: 50px;
+    }
+}
+/* ---------------- About style --------------- */
+.about {
+    background-color: #F2F2F2;
+}
+.about .about-info h3{
+    color: #333;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+.about .about-info h3 span{color: #5799af}
+.general-paragraph{
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+.about .about-info .head-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.about .about-info .head-btn:hover{
+    background-color: #222;
+    color: #09c;
+}
+
+@media (max-width: 767.98px) {
+    .about .about-info{text-align: center;padding: 10px;}
+    .about .about-info h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    .general-paragraph{font-size: 14px;line-height: 1.5; margin-bottom: 10px;}
+    .about .about-info .head-btn{padding: 8px 12px;margin: 10px 0 10px}
+    .about-info{margin-bottom: 10px;}
+    .section-paragraph{width: 90%;padding: 10px}
+    .sec-line:after{
+        left: 70px;
+        bottom: 50%;
+    }
+}
+/* ---------------- services style --------------- */
+.services{
+    background-color: #f7f7f7;
+}
+
+.services .serv{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 6px 6px #ccc;
+    transition: all .3s ease-in-out;
+    perspective: 300px;
+}
+.services .serv:hover{
+    transform: translate(-10px, -10px);
+}
+
+
+.services .serv span{
+    display: inline-block;
+    margin: 6px 0;
+    color: #09c;
+    padding: 8px 12px;
+    font-size: 30px;
+    border: 1px solid #09c;
+    border-radius: 50%;
+    transition: all .7s ease-in-out;
+
+}
+.services .serv:hover span{
+    transform: rotateY(180deg);
+}
+.services .serv:hover .fa{
+    transform: rotateY(-180deg);
+}
+.services .serv i{transition: all .7s ease-in-out;transition-delay: .5s;}
+.services .serv h4{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.services .serv .section-paragraph{
+    margin: 15px 0;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 16px;
+}
+/* ---------------- Statistics style --------------- */
+.stat{
+    height: 300px;
+    background-image: url(../images/lap-stat.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+}
+.stat-info{
+    margin: 50px 0;
+    padding: 10px;
+    color: #fff;
+}
+.stat-info span{
+    display: inline-block;
+    font-size: 45px;
+    background-color: #09c;
+    padding: 10px 13px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.stat-info p{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+.stat-info h5{
+    font-size: 17px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .stat{
+        height: 860px;
+        margin: 20px 0;
+    }
+    .stat-info{
+        margin: 20px 0;
+    }
+    .stat-info:last-of-type{margin-bottom: 0}
+}
+
+/* ---------------- portfolio style --------------- */
+.portfolio .buttons{
+    width: 70%;
+    margin: 10px auto 30px;
+}
+.buttons-effect{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 1px solid #fff;
+    outline: none;
+    font-size: 17px;
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.buttons-effect span:first-child{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #09c;
+    z-index: 1;
+}
+.buttons-effect span:last-child{
+    position: relative;
+    z-index: 2;
+}
+.buttons-effect.from-top span:first-child{
+    width: 100%;
+    height: 0;
+}
+
+.buttons-effect.from-left span:first-child{
+    width: 0;
+    height: 100%;
+}
+.buttons-effect.from-right span:first-child{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+}
+.portfolio .images > div{
+    width: 100%;
+}
+.portfolio .images .all{
+    margin-bottom: 30px;
+    position: relative;
+}
+.active-btn{
+    text-transform: uppercase;
+    background-color: #09c;
+}
+.portfolio .images .all .lay-out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 124, 163, 0.5);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.portfolio .images .all:hover .lay-out{
+    opacity: 1;
+}
+
+.view{
+    display: block;
+    margin: 20px auto;
+    width: 180px;
+}
+.images .mix{
+    
+}
+.images .mix img{
+    margin: auto;
+    width: 250px;
+}
+#Container .mix{
+	display: none;
+    margin: 0px auto 30px;
+}
+
+/* ---------------- Experts style --------------- */
+.experts{
+    background-color: #2c2b2b;
+    color: #fff;
+}
+.experts .section-title{color: #FEFEFE}
+.experts .section-paragraph{
+    color: #a7a5a5;
+    margin: 30px auto 40px;
+}
+.circle-area-wrapper{
+    position: relative;
+    margin-bottom: 40px;
+}
+.circle-inner{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+canvas{
+    display: block;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+.circle-area-wrapper h3{
+    margin-top: 30px;
+    color: #7cd6f4;
+}
+
+    
+
+
+
+
+
